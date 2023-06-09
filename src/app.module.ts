@@ -18,6 +18,7 @@ import { Question } from './question/entities/question.entity';
 import { Answer } from './answer/entities/answer.entity';
 import { History } from './history/entities/history.entity';
 import { HistoryModule } from './history/history.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -41,6 +42,7 @@ import { HistoryModule } from './history/history.module';
     QuestionModule,
     AnswerModule,
     HistoryModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

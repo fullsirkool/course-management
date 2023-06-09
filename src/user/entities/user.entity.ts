@@ -4,10 +4,8 @@ import {
   Column,
   Entity,
   JoinColumn,
-  JoinTable,
   ManyToOne,
   OneToMany,
-  OneToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
@@ -24,9 +22,6 @@ export class User {
 
   @Column()
   password: string;
-
-  @Column({type: 'uuid'})
-  capcha: string;
 
   @Column({name: 'role_id'})
   roleId: number
